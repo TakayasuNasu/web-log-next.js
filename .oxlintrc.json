@@ -1,0 +1,105 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["import"],
+  "overrides": [
+    {
+      "files": ["src/shared/**/*.{ts,tsx}"],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": [
+              {
+                "group": ["@/src/entities/**"],
+                "message": "shared must not depend on entities"
+              },
+              {
+                "group": ["@/src/features/**"],
+                "message": "shared must not depend on features"
+              },
+              {
+                "group": ["@/src/widgets/**"],
+                "message": "shared must not depend on widgets"
+              },
+              {
+                "group": ["@/src/pages/**"],
+                "message": "shared must not depend on pages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["src/entities/**/*.{ts,tsx}"],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": [
+              {
+                "group": ["@/src/features/**"],
+                "message": "entities must not depend on features"
+              },
+              {
+                "group": ["@/src/widgets/**"],
+                "message": "entities must not depend on widgets"
+              },
+              {
+                "group": ["@/src/pages/**"],
+                "message": "entities must not depend on pages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["src/features/**/*.{ts,tsx}"],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": [
+              {
+                "group": ["@/src/widgets/**"],
+                "message": "features must not depend on widgets"
+              },
+              {
+                "group": ["@/src/pages/**"],
+                "message": "features must not depend on pages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["src/widgets/**/*.{ts,tsx}"],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": [
+              {
+                "group": ["@/src/pages/**"],
+                "message": "widgets must not depend on pages"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "**/*.test.ts",
+        "**/*.test.tsx",
+        "**/*.spec.ts",
+        "**/*.spec.tsx"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ]
+}
