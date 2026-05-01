@@ -4,7 +4,7 @@ export {
   THEME_COOKIE_NAME,
   THEME_VALUES,
   type Theme,
-} from "./model/theme";
+} from "./theme";
 export {
   getThemeFromCookieStore,
   getThemeInitializationScript,

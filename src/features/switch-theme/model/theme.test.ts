@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import { describe, test } from "node:test";
 
+import { isTheme, normalizeTheme } from "../theme";
 import { getThemeFromCookieStore } from "../theme.server";
-import { isTheme, normalizeTheme } from "./theme";
 
 describe("theme", () => {
   test("normalizes invalid values to light", () => {

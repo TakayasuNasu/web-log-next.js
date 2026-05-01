@@ -18,6 +18,9 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "correctness": {
+        "noPrivateImports": "error"
+      },
       "suspicious": {
         "noUnknownAtRules": "off"
       }
