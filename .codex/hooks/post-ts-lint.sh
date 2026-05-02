@@ -12,6 +12,7 @@ esac
 
 bunx biome format --write "$file" >/dev/null 2>&1 || true
 bunx oxlint --fix "$file" >/dev/null 2>&1 || true
+bunx biome format --write "$file" >/dev/null 2>&1 || true
 diag="$(bunx oxlint "$file" 2>&1 | head -20)"
 
 if [ -n "$diag" ]; then
