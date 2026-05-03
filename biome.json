@@ -17,6 +17,15 @@
   "linter": {
     "enabled": true,
     "rules": {
+      "nursery": {
+        "useSortedClasses": {
+          "fix": "safe",
+          "level": "error",
+          "options": {
+            "functions": ["twMerge", "twJoin", "tv"]
+          }
+        }
+      },
       "recommended": true,
       "correctness": {
         "noPrivateImports": "error"

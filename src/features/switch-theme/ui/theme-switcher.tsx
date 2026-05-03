@@ -12,7 +12,7 @@ export function ThemeSwitcher() {
       aria-label={`Switch to ${nextTheme} mode`}
       aria-pressed={theme === "dark"}
       onClick={toggleTheme}
-      className="inline-flex items-center gap-2 rounded-full border px-3 py-2 text-sm font-medium transition hover:opacity-80"
+      className="inline-flex items-center gap-2 rounded-full border px-3 py-2 font-medium text-sm transition hover:opacity-80"
     >
       <span
         aria-hidden="true"
