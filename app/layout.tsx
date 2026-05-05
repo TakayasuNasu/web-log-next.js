@@ -7,6 +7,7 @@ import {
   ThemeProvider,
 } from "@/src/features/switch-theme";
 import { Header } from "@/src/widgets/header";
+import { MainNavigation } from "@/src/widgets/side-nav";
 
 export const metadata: Metadata = {
   title: "web-log-next.js",
@@ -32,11 +33,12 @@ export default async function RootLayout({
         <ThemeInitScript />
         <ThemeProvider initialTheme={initialTheme}>
           <div className="global-wrapper mx-auto my-3 justify-start md:grid">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <section>xx</section>
+            <MainNavigation />
+            <div className="flex flex-col">
+              <Header />
+              <main className="flex-1">{children}</main>
+            </div>
           </div>
-          <footer className="">xxx</footer>
         </ThemeProvider>
       </body>
     </html>
