@@ -1,0 +1,7 @@
+interface:
+  display_name: "One-line commit message"
+  short_description: "Generate a concise one-line git commit message"
+  default_prompt: "Use $one-line-commit-message to suggest a single-line git commit message from the current diff."
+
+policy:
+  allow_implicit_invocation: true

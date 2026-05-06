@@ -1,4 +1,4 @@
-import { normalizeTheme, THEME_COOKIE_NAME, type Theme } from "./model/theme";
+import { normalizeTheme, THEME_COOKIE_NAME, type Theme } from "./theme";
 
 type CookieLike = {
   get(name: string): { value: string } | undefined;

@@ -10,7 +10,7 @@ import {
   useState,
 } from "react";
 
-import { normalizeTheme, THEME_COOKIE_NAME, type Theme } from "./model/theme";
+import { normalizeTheme, THEME_COOKIE_NAME, type Theme } from "./theme";
 
 type ThemeContextValue = {
   theme: Theme;

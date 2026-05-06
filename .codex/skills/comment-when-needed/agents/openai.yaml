@@ -1,0 +1,7 @@
+interface:
+  display_name: "Comment When Needed"
+  short_description: "Suggest concise comments for non-obvious code intent"
+  default_prompt: "Use $comment-when-needed to decide whether this code needs a concise explanatory comment."
+
+policy:
+  allow_implicit_invocation: true
