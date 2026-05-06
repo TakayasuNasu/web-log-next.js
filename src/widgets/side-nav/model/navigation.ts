@@ -25,7 +25,7 @@ export function buildMainNavigationItems(hashtags: Array<Hashtag>) {
       iconType: "AiOutlineHome",
     },
     ...hashtags.map((tag) => ({
-      href: `/tags/${tag.slug}`,
+      href: `/?tag=${tag.slug}`,
       label: tag.name,
       iconType: tag.iconType,
     })),

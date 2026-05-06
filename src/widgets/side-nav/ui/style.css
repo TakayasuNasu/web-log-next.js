@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+  ul.nav-list {
+    width: 80px;
+  }
+}
+@media (min-width: 1280px) {
+  ul.nav-list {
+    width: 230px;
+  }
+}
+
+ul.nav-list li {
+  font-size: var(--font-size-medium);
+}
