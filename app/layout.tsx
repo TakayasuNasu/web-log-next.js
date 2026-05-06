@@ -6,6 +6,7 @@ import {
   ThemeInitScript,
   ThemeProvider,
 } from "@/src/features/switch-theme";
+import { Footer } from "@/src/widgets/footer";
 import { Header } from "@/src/widgets/header";
 import { MainNavigation } from "@/src/widgets/side-nav";
 
@@ -39,6 +40,7 @@ export default async function RootLayout({
               <main className="flex-1">{children}</main>
             </div>
           </div>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

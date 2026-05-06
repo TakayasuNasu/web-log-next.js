@@ -1,3 +1,8 @@
+---
+name: fsd-review
+description: Review JavaScript, TypeScript, and TSX changes for Feature-Sliced Design compliance.
+---
+
 # FSD Review
 
 Use this skill when reviewing JavaScript, TypeScript, or TSX changes for Feature-Sliced Design compliance.
@@ -34,4 +39,3 @@ Use this skill when reviewing JavaScript, TypeScript, or TSX changes for Feature
 - For each finding, state the file and the specific FSD concern.
 - Keep the response concise and actionable.
 - If there are no findings, say that the change looks FSD-compliant and mention any residual risks.
-

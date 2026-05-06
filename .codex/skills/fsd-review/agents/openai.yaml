@@ -1,0 +1,7 @@
+interface:
+  display_name: "FSD Review"
+  short_description: "Review code changes for Feature-Sliced Design compliance"
+  default_prompt: "Use $fsd-review to review these changes for Feature-Sliced Design compliance."
+
+policy:
+  allow_implicit_invocation: true
