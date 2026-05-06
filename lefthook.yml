@@ -13,3 +13,6 @@ pre-push:
     oxlint:
       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx}"
       run: bunx oxlint {push_files}
+    bun-test:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx}"
+      run: bun test
