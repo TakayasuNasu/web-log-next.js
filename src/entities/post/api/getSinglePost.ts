@@ -1,5 +1,5 @@
-import type { PostsResponse } from "@/src/entities/posts/model/types";
 import { graphql } from "@/src/shared/api/contentful/graphql";
+import type { PostsResponse } from "../model/types";
 
 const reply = `
 reply {

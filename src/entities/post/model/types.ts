@@ -26,3 +26,12 @@ export type Post = {
   };
   reply?: Post;
 };
+
+export type PostsResponse = {
+  data: {
+    postCollection: {
+      items: Array<Post>;
+    };
+  };
+  errors?: Array<{ message: string }>;
+};
