@@ -9,9 +9,11 @@ Use this skill when deciding whether a code comment should be added or updated i
 
 ## Add a comment when intent is not obvious
 
-- A function is long enough that the reader needs help understanding the flow.
+- A function is 20 lines or longer and the reader needs help understanding the flow.
   - Treat React components that mainly return JSX as an exception.
   - For GraphQL-heavy functions, ignore the query block when judging length.
+  - Add a short doc comment that explains the function's purpose before the definition.
+  - Use a JSDoc-style block with one-line summary and parameter/return notes when helpful.
 - `if` / `for` nesting makes the condition hard to read without explanation.
 - A fallback such as `?? []` or `|| undefined` exists for a specific reason.
 - A magic number, magic string, or hard-coded branch drives behavior.
@@ -23,6 +25,16 @@ Use this skill when deciding whether a code comment should be added or updated i
 - Keep comments short and local to the block they describe.
 - Prefer one comment before the tricky block instead of repeated inline narration.
 - Do not add comments that restate the code.
+- For long functions, prefer this format:
+  ```ts
+  /**
+   * Calculate the total 
+   * @param int a First argument
+   * @param int b Second argument
+   * @return int Calculation result
+   */
+  function add(a, b) { ... }
+  ```
 
 ## Skip comments when
 
@@ -35,4 +47,3 @@ Use this skill when deciding whether a code comment should be added or updated i
 - If you are reviewing code, point out where a comment would help and why.
 - If you are editing code, add only the minimum comments needed to clarify intent.
 - If no comment is necessary, say that the code is already clear.
-

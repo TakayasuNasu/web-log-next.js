@@ -1,7 +1,5 @@
+import { HomePage } from "@/src/pages/home/ui/home-page";
+
 export default function Home() {
-  return (
-    <div className="">
-      <p>Hello, Next.js!</p>
-    </div>
-  );
+  return <HomePage />;
 }

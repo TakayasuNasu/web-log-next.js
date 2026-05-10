@@ -1,3 +1,9 @@
+export type { OgpCardState } from "./ogp";
+export {
+  createOgpCardStateFromDocument,
+  extractOgpCardState,
+  loadOgpHtml,
+} from "./ogp";
 export {
   buildGetPostsQuery,
   filterPostsByHashtagSlug,

@@ -1,0 +1,13 @@
+article[data-has-reply="true"] {
+  position: relative;
+}
+
+article[data-has-reply="true"]:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: min(8.2vw, 34px);
+  width: 2px;
+  height: 100%;
+  background-color: var(--border-colour);
+}

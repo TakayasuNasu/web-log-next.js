@@ -1,0 +1,7 @@
+interface:
+  display_name: "Next Image LocalPattern Fix"
+  short_description: "Fix Next.js Image localPatterns/query-string issues"
+  default_prompt: "Use $next-image-localpattern-fix to fix this Next.js Image localPatterns error by making the source path-based or updating image config."
+
+policy:
+  allow_implicit_invocation: true

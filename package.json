@@ -14,7 +14,8 @@
     "next": "16.2.3",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "react-icons": "^5.6.0"
+    "react-icons": "^5.6.0",
+    "react-syntax-highlighter": "^16.1.1"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
@@ -22,9 +23,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "babel-plugin-react-compiler": "1.0.0",
     "clsx": "^2.1.1",
     "lefthook": "^2.1.5",
+    "markdown-to-jsx": "^9.7.16",
     "neverthrow": "^8.2.0",
     "oxlint": "^1.62.0",
     "tailwind-variants": "^3.2.2",
